@@ -34,7 +34,7 @@ header {
     padding: 20px;
 }
 
-/* .description {
+.description {
     
     margin: 30px;
     background-color: #fff;
@@ -51,7 +51,7 @@ header {
     height: 400px;
     height: auto;
     margin-right: 20px;
-} */
+}
 
 .text {
     flex: 1;
@@ -82,36 +82,6 @@ header {
 
 
 
-.description {
-    margin: 30px;
-    background-color: #fff;
-    border-radius: 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Changed to column layout */
-    align-items: center;
-    text-align: center; /* Added text-align for centering */
-}
-
-.project-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #dd2b31;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-bottom: 20px; /* Added margin-bottom to create space between the link and image */
-}
-
-.description img {
-    width: 400px;
-    height: 400px;
-    height: auto;
-}
-
-/* ... your existing responsive styles ... */
 
 
 
