@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Bagel+Fat+One&family=Work+Sans:wght@600&display=swap");
+
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f9ff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'ADLaM Display', cursive;
+    background-color: #393d44;
+    color: #fff;
+    padding: 10px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.description {
+    
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.description img {
+    width: 400px;
+    height: 400px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.text {
+    flex: 1;
+}
+
+.text h1 {
+    color: #dd2b31;
+    font-family: 'ADLaM Display', cursive;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .description {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .description img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .text h1{
+        font-size: 18px;
+    }
+
+    .text p {
+        font-size: 10px;
+    }
+
+
+}
