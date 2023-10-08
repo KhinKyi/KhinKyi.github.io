@@ -70,17 +70,15 @@ header {
 
 
 .demo-button {
-   
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #dd2b31;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    font-weight: bold;
     margin-top: 10px;
 }
-
 
 
 
@@ -113,10 +111,9 @@ header {
     }
 
     .demo-button {
-        
+        display: block;
         margin-top: 20px;
-        width: 100%; 
+        text-align: center;
     }
-
 
 }
