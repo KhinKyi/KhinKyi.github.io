@@ -92,8 +92,6 @@ header {
 
 
 
-
-
 @media (max-width: 768px) {
     .description {
         flex-direction: column;
