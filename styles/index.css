@@ -337,56 +337,51 @@ h2{
   margin-bottom: 10px;
 }
 
-.skill{
-  font-size: 18px;
-  font-weight: bold;
-  background: #dd2b31;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  padding: 8px 25px;
-  border-radius: 6px;
-  transition: 0.5s;
-}
-.skill:hover{
+
+
+/* .skill:hover{
   background: #393d44;
   color: #f6f9ff;
   font-weight: bold;
   border: 3px solid #dd2b31;
-}
+} */
 
 /* about section end */
 
 
-
-
-
-
-
-
-
 /* skills */
+.skill{
+  font-size: 18px;
+  font-weight: bold;
+  background: #dd2b31;
+  color: #f6f9ff;
+  text-decoration: none;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
 
 
 .skill-sec {
-  text-align: center;
-  padding: 25px 60px;
-  background-color: #f6f9ff;
-  
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-right: 15px;
 }
 
-.skill-sec h1 {
+.skill-container h1 {
   font-size: 40px;
-  margin-bottom: -60px;
+  margin-bottom: 30px;
   text-align:center;
   font-family: 'ADLaM Display', cursive;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   font-weight: bold;
   color: #393d44;
   position: relative;
 }
 
-.skill-sec h1::after{
+.skill-container h1::after{
   content:'';
   background: #dd2b31;
   width: 100px;
@@ -399,58 +394,47 @@ h2{
 }
 
 
-
-
-.skill-content {
-  display: inline-block;
- 
-    width: 200px;
-    margin: 30px ;
-    margin-bottom: 10px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    background-color: #fff;
-    border-radius: 13px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.category {
+  margin-bottom: 20px;
 }
 
-
-.skill-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+.category-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-
-/* Style skill headings */
-.skill-content h3 {
-  font-size: 18px;
-  margin-top: 10px;
+.skill-category {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-/* Style skill levels */
-.skill-content .level {
-  font-size: 14px;
-  color: #dd2b31;
+.skill-name {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
+.skill-bar {
+  height: 20px;
+  background-color: rgb(165, 47, 47); /* Gray background */
+  border-radius: 10px;
+  animation: animate-bar 2s;
+}
 
-@media (width < 568px) {
-  
-  .skill-sec h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
+@keyframes animate-bar {
+  0% { width: 0; }
+}
+
+@media (max-width: 600px) {
+  .skill-sec {
+    width: 90%;
+    margin: 50px auto;
   }
-
- 
-  .skill-content {
-    margin: 0;
-    justify-content: center;
-    margin-bottom: 20px;
-    width: 80%;
-  }
-} 
+}
 
 /* skills end */
 
@@ -490,15 +474,17 @@ h2{
 
 .row{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap:30px;
 }
 
 .service{
   text-align: center;
-  padding: 25px 10px;
+  padding: 20px 10px;
   border-radius: 6px;
   font-size: 14px;
+  margin: 10px;
+  margin-bottom: 30px;
   cursor: pointer;
   background: transparent;
   transition: transform 0.5s, background 0.5s;
@@ -647,9 +633,80 @@ h2{
   text-align: center;
 }
 
+/* contact information section */
 
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
+.contact-info a {
+  color: #000000;
+  text-decoration: none; 
+}
 
+.contact-info {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+ 
+  
+  align-items: center;
+ 
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info i {
+  font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  color: #dd2b31;
+}
+
+.contact-image {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-image {
+    margin-top: 20px;
+  }
+}
 
 
 
