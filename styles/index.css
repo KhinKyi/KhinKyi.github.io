@@ -302,6 +302,12 @@ h2{
   width: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .pic {
+      margin-right: 10px; 
+  }
+}
+
 .about {
   max-width: 100%; 
   margin: 0 auto;
