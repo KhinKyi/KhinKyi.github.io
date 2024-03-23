@@ -143,6 +143,8 @@ ul li a:hover {
 .title span {
   color:#dd2b31;
   font-weight: 600;
+  font-family: "ADLaM Display", cursive;
+
 }
 
 .description {
@@ -171,6 +173,7 @@ ul li a:hover {
   font-weight: bold;
   background-color: #dd2b31;
   color: #f6f9ff;
+  margin-right: 10px;
 }
 
 .cv-form:hover {
