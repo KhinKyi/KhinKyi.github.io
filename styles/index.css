@@ -682,6 +682,7 @@ li {
 
 .contact-info h2 {
   margin-bottom: 20px;
+  padding: 5px;
 }
 
 .contact-info p {
@@ -730,7 +731,7 @@ li {
   .contact-info p {
 
     font-size: 14px;
-    
+
   }
 
 }
