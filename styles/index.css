@@ -435,7 +435,7 @@ li {
 .tab-card {
   margin-top: 60px;
   display: flex;
-  border-radius: 5px;
+  border-radius: 7px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
@@ -473,6 +473,7 @@ li {
 .skill-tab-button.active-tab {
     color:#fff;
     background-color: #dd2b31;
+    margin-bottom: 10px;
 }
 
 .tab-content {
