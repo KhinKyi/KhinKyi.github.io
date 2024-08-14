@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="styles/tab.css" />
+</head>
+<body>
+
+
+    <div class="skill-container">
+        <h1>My Skills</h1>
+        <div class="skill-sec" id="myskills">
+            <div class="tab-card">
+                <div class="tab-buttons">
+                    <button class="tab-button" onclick="showTab('technical')">Technical Skills</button>
+                    <button class="tab-button" onclick="showTab('soft')">Soft Skills</button>
+                    <button class="tab-button" onclick="showTab('art')">Art and Design</button>
+                </div>
+                <div class="tab-content">
+                    <div id="technical" class="tab-pane">
+                        <button class="skill-button">HTML</button>
+                        <button class="skill-button">CSS</button>
+                        <button class="skill-button">JavaScript</button>
+                        <!-- Add more here -->
+                    </div>
+                    <div id="soft" class="tab-pane">
+                        <button class="skill-button">Communication</button>
+                        <button class="skill-button">Teamwork</button>
+                        <button class="skill-button">Problem-Solving</button>
+                        <!-- Add more here -->
+                    </div>
+                    <div id="art" class="tab-pane">
+                        <button class="skill-button">Digital Art</button>
+                        <button class="skill-button">Illustration</button>
+                        <button class="skill-button">3D Modeling</button>
+                        <!-- Add more here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="skill.js"></script>
+</body>
+</html>

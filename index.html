@@ -98,9 +98,9 @@
             digital fan art, and chibi drawings. This experience has given me great customer service skills, 
             and I've set up some clear rules (called Terms of Service) to make things smooth for my clients before they ask for my work.
           </p>
-        <div class="data">
+        <!-- <div class="data">
         <a href="#contact-me" class="skill">Get In Touch With Me</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -118,164 +118,68 @@
 
 <!-- skills -->
 
-<div class="skill-container">
-  <h1>My Skills</h1>
-<div class="skill-sec" id="myskills">
+<div class="skill-container" id="myskills">
+  <h1 class="myskills">My Skills</h1>
 
-  <div class="category">
-    <div class="category-title">Web Development Skills</div>
-    <div class="skill-category">
-      <div class="skill-name">HTML (70%)</div>
-      <div class="skill-bar" style="width: 70%; background-color: #ff4d4d;"></div>
-    </div>
-    <div class="skill-category">
-      <div class="skill-name">CSS (70%)</div>
-      <div class="skill-bar" style="width: 70%; background-color: #ff4d4d;"></div>
-    </div>
-    <div class="skill-category">
-      <div class="skill-name">React.js (70%)</div>
-      <div class="skill-bar" style="width: 70%; background-color: #ff4d4d;"></div>
-    </div>
+  <div class="skill-sec">
+      <div class="tab-card">
+          <div class="skill-tab-buttons">
+              <button class="skill-tab-button" onclick="showTab('technical')">Programming Languages and Frameworks:</button>
+              <button class="skill-tab-button" onclick="showTab('database')">Database and Development Tools:</button>
+              <button class="skill-tab-button" onclick="showTab('soft')">Soft Skills</button>
+              <button class="skill-tab-button" onclick="showTab('design')">Design and Analysis Skills:</button>
+              <button class="skill-tab-button" onclick="showTab('arttools')">Art and Design Tools</button>
+          </div>
+          <div class="tab-content">
+              <div id="technical" class="tab-pane">
+                  <button class="skill-button">70% HTML</button>
+                  <button class="skill-button">70% CSS </button>
+                  <button class="skill-button">70% JavaScript</button>
+                  <button class="skill-button">50% Java</button>
+                  <button class="skill-button">50% React</button>
+                  <button class="skill-button">50% Springboot</button>
+                  <button class="skill-button">70% MySQL</button>
+                  <button class="skill-button">70% App Script</button>
+              </div>
+
+              <div id="database" class="tab-pane">
+                <button class="skill-button">70% MySQL</button>
+                <button class="skill-button">70% XAMPP </button>
+                <button class="skill-button">50% GitHub</button>
+                <button class="skill-button">50% Eclipse IDE</button>
+                <button class="skill-button">50% IntelliJ IDEA</button>
+                <button class="skill-button">70% Visual Studio Code </button>
+                <button class="skill-button">70% Android Studio </button>
+              </div>
+
+              <div id="soft" class="tab-pane">
+                  <button class="skill-button">70% Communication</button>
+                  <button class="skill-button">50% Teamwork</button>
+                  <button class="skill-button">80% Creativity</button>
+                  <button class="skill-button">50% Problem-Solving</button>
+              </div>
+
+              <div id="design" class="tab-pane">
+                  <button class="skill-button">80% Logo Design</button>
+                  <button class="skill-button">80% Digital Illustration</button>
+                  <button class="skill-button">70% UI/UX Design</button>
+                  <button class="skill-button">50% Graphic Design</button>
+                  <button class="skill-button">70% Wireframes</button>
+                  <button class="skill-button">40% Power BI</button>
+                  <button class="skill-button">70% Google Sheets</button>
+              </div>
+
+              <div id="arttools" class="tab-pane">
+                <button class="skill-button">80% Clip Studio Paint</button>
+                <button class="skill-button">80% Procreate</button>
+                <button class="skill-button">70% Canva</button>
+                <button class="skill-button">40% Inkscape</button>
+                <button class="skill-button">70% Figma</button>
+            </div>
+
+          </div>
+      </div>
   </div>
-
-  <div class="category">
-    <div class="category-title">Programming Language Skills</div>
-    <div class="skill-category">
-      <div class="skill-name">Java (40%)</div>
-      <div class="skill-bar" style="width: 40%; background-color: #ff4d4d;"></div>
-    </div>
-    <div class="skill-category">
-      <div class="skill-name">JavaScript (40%)</div>
-      <div class="skill-bar" style="width: 40%; background-color: #ff4d4d;"></div>
-    </div>
-    <div class="skill-category">
-      <div class="skill-name">App Script (70%)</div>
-      <div class="skill-bar" style="width: 70%; background-color: #ff4d4d;"></div>
-    </div>
-  </div>
-
-  <div class="category">
-    <div class="category-title">Frameworks and Libraries</div>
-    <div class="skill-category">
-      <div class="skill-name">Springboot (40%)</div>
-      <div class="skill-bar" style="width: 40%; background-color: #ff4d4d;"></div>
-    </div>
-    <div class="skill-category">
-      <div class="skill-name">jQuery (40%)</div>
-      <div class="skill-bar" style="width: 40%; background-color: #ff4d4d;"></div>
-    </div>
-  </div>
-
-  <div class="category">
-    <div class="category-title">Database</div>
-    <div class="skill-category">
-      <div class="skill-name">MySQL (50%)</div>
-      <div class="skill-bar" style="width: 50%; background-color: #ff4d4d;"></div>
-    </div>
-
-    <div class="skill-category">
-      <div class="skill-name">Xampp (50%)</div>
-      <div class="skill-bar" style="width: 50%; background-color: #ff4d4d;"></div>
-    </div>
-  </div>
-
-  <div class="category">
-    <div class="category-title">Version Control</div>
-    <div class="skill-category">
-      <div class="skill-name">GitHub (50%)</div>
-      <div class="skill-bar" style="width: 50%; background-color: #ff4d4d;"></div>
-    </div>
-  </div>
-
-  <div class="category">
-    <div class="category-title">Arts and Design</div>
-    <div class="skill-category">
-      <div class="skill-name">Logo (90%)</div>
-      <div class="skill-bar" style="width: 90%; background-color: #ff4d4d;"></div>
-    </div>
-
-    <div class="skill-category">
-      <div class="skill-name">Digital illustrations (90%)</div>
-      <div class="skill-bar" style="width: 90%; background-color: #ff4d4d;"></div>
-    </div>
-
-    <div class="skill-category">
-      <div class="skill-name">Wireframes (80%)</div>
-      <div class="skill-bar" style="width: 80%; background-color: #ff4d4d;"></div>
-    </div>
-
-    <div class="skill-category">
-      <div class="skill-name">Prototyping (80%)</div>
-      <div class="skill-bar" style="width: 80%; background-color: #ff4d4d;"></div>
-    </div>
-
-    <div class="skill-category">
-      <div class="skill-name">Graphic Design (70%)</div>
-      <div class="skill-bar" style="width: 70%; background-color: #ff4d4d;"></div>
-    </div>
-
-
-  </div>
-
-  <div class="category">
-    <div class="category-title">Languages</div>
-    <div class="skill-category">
-      <div class="skill-name">N5 Level Japanese (40%)</div>
-      <div class="skill-bar" style="width: 40%; background-color: #ff4d4d;"></div>
-    </div>
-    <div class="skill-category">
-      <div class="skill-name">English (80%)</div>
-      <div class="skill-bar" style="width: 80%; background-color: #ff4d4d;"></div>
-    </div>
-
-  </div>
-
-  <div class="category">
-    <div class="category-title">Software Applications</div>
-
-    <div class="skill-category">
-      <div class="skill-name">Google Sheets (70%)</div>
-      <div class="skill-bar" style="width: 70%; background-color: #ff4d4d;"></div>
-    </div>
-
-    <div class="skill-category">
-      <div class="skill-name">Eclipse IDE (50%)</div>
-      <div class="skill-bar" style="width: 50%; background-color: #ff4d4d;"></div>
-    </div>
-
-    <div class="skill-category">
-      <div class="skill-name">IntelliJ IDEA (50%)</div>
-      <div class="skill-bar" style="width: 50%; background-color: #ff4d4d;"></div>
-    </div>
-
-    <div class="skill-category">
-      <div class="skill-name">Visual Studio Code (70%)</div>
-      <div class="skill-bar" style="width: 70%; background-color: #ff4d4d;"></div>
-    </div>
-
-    <div class="skill-category">
-      <div class="skill-name">Android Studio (50%)</div>
-      <div class="skill-bar" style="width: 50%; background-color: #ff4d4d;"></div>
-    </div>
-
-    <div class="skill-category">
-      <div class="skill-name">Power BI (50%)</div>
-      <div class="skill-bar" style="width: 50%; background-color: #ff4d4d;"></div>
-    </div>
-
-    <div class="skill-category">
-      <div class="skill-name">Figma (50%)</div>
-      <div class="skill-bar" style="width: 50%; background-color: #ff4d4d;"></div>
-    </div>
-
-    <div class="skill-category">
-      <div class="skill-name">Canva (70%)</div>
-      <div class="skill-bar" style="width: 70%; background-color: #ff4d4d;"></div>
-    </div>
-
-  </div>
-
-</div>
 </div>
 
 
@@ -638,29 +542,31 @@ filterSelection('all');
 //end of js for pj section
 
 
+function showTab(tabId) {
+    // Hide all tab panes
+    const tabPanes = document.querySelectorAll('.tab-pane');
+    tabPanes.forEach(pane => pane.classList.remove('active'));
 
-//start of js for skill bars
-// window.addEventListener('DOMContentLoaded', () => {
-//     const skillBars = document.querySelectorAll('.skill-bar');
-//     skillBars.forEach(skillBar => {
-//       const width = skillBar.style.width;
-//       skillBar.style.width = '0';
-//       setTimeout(() => {
-//         skillBar.style.width = width;
-//       }, 500);
-//     });
-//   });
+    // Show the clicked tab pane
+    const activeTab = document.getElementById(tabId);
+    activeTab.classList.add('active');
 
-window.addEventListener('DOMContentLoaded', () => {
-    const skillBars = document.querySelectorAll('.skill-bar-fill');
-    skillBars.forEach(skillBar => {
-      const width = skillBar.style.width;
-      skillBar.style.width = '0';
-      setTimeout(() => {
-        skillBar.style.width = width;
-      }, 500);
-    });
-  });
+    // Remove 'active-tab' class from all buttons
+    const tabButtons = document.querySelectorAll('.skill-tab-button');
+    tabButtons.forEach(button => button.classList.remove('active-tab'));
+
+    // Add 'active-tab' class to the clicked button
+    const clickedButton = document.querySelector(`.skill-tab-button[onclick="showTab('${tabId}')"]`);
+    clickedButton.classList.add('active-tab');
+}
+
+// Set default tab
+document.addEventListener('DOMContentLoaded', () => {
+    showTab('technical');
+});
+
+
+
 
 
 </script>
